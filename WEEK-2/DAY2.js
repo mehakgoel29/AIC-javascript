@@ -93,3 +93,94 @@ else{
     console.log("number is odd");
 }
 
+// If cost price and selling price of an item is input through the keyboard, write a program
+// to determine whether the seller has made profit or incurred loss. Also determine how
+// much profit he made or loss he incurred.
+
+let cp=prompt("enter the cost price : ");
+let sp=prompt("enter the selling price : ");
+if (sp>cp){
+    console.log ("seller has made the profit of : "+ (sp-cp)+"rupees");
+}
+else if (sp<cp){
+    console.log("seller has incurred the loss of : "+(cp-sp) +"rupees");
+}
+
+
+// Take positive integer input and tell if it is a three-digit number or not
+let number = prompt("enter the number to check if it is a three-digit number or not : ");
+if (number>0 && number<1000 && number>=100){
+    console.log(number +" is a three-digit number");
+}
+else{
+    console.log(number +" is not a three-digit number");
+}
+
+//Take positive integer input and tell if it is divisible by 5 or 3
+let integer=prompt("enter a number to check divisibility by 3 and 5 : ")
+if (integer %5==0){
+    console.log(integer+" is divisible by 5");
+}
+if(integer%3==0){
+    console.log(integer+" is divisible by 3");
+}
+else{
+    console.log(integer+" is neither divisible by 5 nor by 3");
+}
+
+// Take positive integer input and tell if it is divisible by 5 or 3 but not divisible by 15.
+let integern=prompt("enter a number ");
+if ( integern>0 && (integern%5==0 || integern%3==0) && integern%15!=0){
+    console.log("it is divisible by 5 or 3 but not divisible by 15.")
+}
+else{
+    console.log("condition not satisfied");
+}
+
+// Take positive integer input and tell if it is divisible by 5 and 3.
+let inputNum=prompt("enter the number");
+if (inputNum%5==0 && inputNum%3==0){
+    console.log("it is divisible by 5 and 3");
+}
+else{
+    console.log("condition not satisfied");
+}
+
+// Take 3 positive integers input and print the greatest of them.
+let n1= prompt("enter ist integer: ");
+let n2= prompt("enter second integer: ");
+let n3= prompt("enter third integer: ");
+if(n1>0 && n2>0 && n3>0){
+    if (n1>n2 && n1>n3){
+        console.log("n1 is greatest");
+    }
+    else if (n2>n1 && n2>n3){
+        console.log("n2 is greatest");
+    }
+    else if (n3>n1 && n3>n2){
+        console.log("n3 is greatest");
+    }
+    else{
+        console.log("choose 3 diff numbers");
+    }
+}
+else{
+    console.log("choose a positive integer");
+}
+
+// Any year is input through the keyboard. Write a program to determine whether the year
+// is a leap year or not. (Considering leap year occurs after every 4 years).
+let year = prompt("enter a year to check whether the year is a leap year or not: ");
+if (year>0 && year>1000 && year<10000){
+    if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)){
+        console.log(year +" is a leap year ");
+    }
+    else{
+        console.log( year+" is not a leap year");
+    }
+}
+else{
+    console.log("enter a correct year");
+}
+
+
