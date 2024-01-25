@@ -58,3 +58,38 @@ if (a > b && a > c && a > d) {
 
 //  Write a program that takes in a day of the week (e.g., Monday, Tuesday, etc.) and
 // outputs the number of days until the weekend
+let dayOfWeek="tuesday";
+if (dayOfWeek=="monday"){
+    console.log("DayLeftUntilWeekend ="+6);
+}
+else if(dayOfWeek=="tuesday"){
+    console.log("DayLeftUntilWeekend ="+5);
+}
+else if(dayOfWeek=="wednesday"){
+    console.log("DayLeftUntilWeekend ="+4);
+}
+
+else if(dayOfWeek=="thursday"){
+    console.log("DayLeftUntilWeekend ="+3);
+}
+
+else if(dayOfWeek=="friday"){
+    console.log("DayLeftUntilWeekend ="+2);
+}
+
+else if(dayOfWeek=="saturday"){
+    console.log("DayLeftUntilWeekend ="+1);
+}
+else{
+    console.log("yeah its weekend");
+}
+
+//WAP to print even and odd number
+let num=8;
+if (num%2==0){
+    console.log("number is even");
+}
+else{
+    console.log("number is odd");
+}
+
