@@ -21,3 +21,4 @@ let  div= document.querySelector('.d')
 console.log(div.innerText);
 console.dir(div.innerHTML);
 console.log(document.querySelector('div').children)
+
