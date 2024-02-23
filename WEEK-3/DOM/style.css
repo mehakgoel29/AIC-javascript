@@ -1,0 +1,13 @@
+.content{
+    height: 200px;
+    width: 500px;
+    border: solid black 2px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.newclass{
+    background-color: crimson;
+    color:antiquewhite;
+}
